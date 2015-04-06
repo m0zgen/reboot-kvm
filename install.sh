@@ -9,7 +9,7 @@ RUN=/usr/bin/reboot-kvm
 SCR=/usr/local/sbin/reboot-kvm.sh
 
 install(){
-	curl http://ala01-web03.rb.kz/scripts/reboot-kvm/reboot-kvm.sh > $SCR
+	curl http://ala01-web03/scripts/reboot-kvm/reboot-kvm.sh > $SCR
 	chmod +x $SCR
 
 
