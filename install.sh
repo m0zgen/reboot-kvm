@@ -9,21 +9,21 @@ RUN=/usr/bin/reboot-kvm
 SCR=/usr/local/sbin/reboot-kvm.sh
 
 install(){
-	curl http://ala01-web03/scripts/reboot-kvm/reboot-kvm.sh > $SCR
+	curl http://Server/scripts/reboot-kvm/reboot-kvm.sh > $SCR
 	chmod +x $SCR
 
 
 	echo -e "export S_PATH=$VAR\n\$S_PATH/reboot-kvm.sh \$*" > $RUN
 	chmod +x $RUN
 
-	echo -e "Install done!"
+	echo -e "\nInstall done!"
 }
 
 uninstall(){
 	/usr/bin/rm $RUN
 	/usr/bin/rm $SCR
 
-	echo -e "Uninstall done!"
+	echo -e "\nUninstall done!"
 }
 
 if [ $# -eq 0 ]; then
