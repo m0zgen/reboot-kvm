@@ -7,7 +7,7 @@ VAR=/usr/local/sbin
 RUN=/usr/bin/reboot-kvm
 SCR=/usr/local/sbin/reboot-kvm.sh
 
-curl http://172.20.0.111/scripts/reboot-kvm/reboot-kvm.sh > $SCR
+curl http://xxx.xxx.xxx.x/scripts/reboot-kvm/reboot-kvm.sh > $SCR
 chmod +x $SCR
 
 
