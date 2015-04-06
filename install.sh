@@ -1,7 +1,8 @@
 #!/bin/bash
  
-# Shutdown or destroy all KVM quests and reboot or shutdown KVM node
+# Install script reboot-kvm.sh
 # Author Yevgeniy Goncharov aka xck, http://sys-admin.kz
+# Usage from HTTP - curl http://Server/install.sh | sh
 
 VAR=/usr/local/sbin
 RUN=/usr/bin/reboot-kvm
